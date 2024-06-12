@@ -1,0 +1,27 @@
+.page-header {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  &__overlay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__image {
+    width: 100vw;
+  }
+}
+@media (min-width: 678px) {
+  .page-header {
+    width: 656px;
+    height: 300px;
+    &__image {
+      width: 656px;
+      height: 300px;
+      border-radius: 12px;
+    }
+  }
+}

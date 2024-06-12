@@ -1,0 +1,15 @@
+.line {
+  min-width: 311px;
+  background-color: $neutralColorWhiteCoffee;
+  height: 1px;
+  border: 0;
+  margin-bottom: 32px;
+  margin-top: 0;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+@media (min-width: 678px) {
+  .line {
+    width: 656px;
+  }
+}

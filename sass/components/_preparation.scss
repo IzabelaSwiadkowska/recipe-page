@@ -1,0 +1,51 @@
+.preparation {
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 32px;
+  &__overlay {
+    background-color: $neutralColorSnow;
+    border-radius: 12px;
+    padding: 24px;
+  }
+  &__title {
+    min-width: 263px;
+    margin: 0;
+    font-size: 20px;
+    color: $primaryColorDarkRaspberry;
+    margin-bottom: 16px;
+  }
+  &__list {
+    width: 263px;
+    margin: 0;
+    padding-left: 24px;
+  }
+  &__item {
+    width: 223px;
+    padding-bottom: 8px;
+    color: $neutralColorWengeBrown;
+    &::marker {
+      color: $primaryColorDarkRaspberry;
+    }
+  }
+  &__item--bold {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+}
+@media (min-width: 678px) {
+  .preparation {
+    width: 656px;
+    &__overlay {
+      padding: 28px;
+    }
+    &__list {
+      width: 600px;
+    }
+    &__item {
+      width: 560px;
+      padding-inline-start: 8px;
+      height: 30px;
+      padding-bottom: 0;
+    }
+  }
+}

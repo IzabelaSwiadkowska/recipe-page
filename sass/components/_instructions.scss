@@ -1,0 +1,51 @@
+.instructions {
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 32px;
+  &__overlay {
+    min-width: 311px;
+  }
+  &__title {
+    font-family: $secondaryFontFamily;
+    font-weight: 400;
+    margin: 0;
+    color: $neutralColorBrandyRed;
+    margin-bottom: 24px;
+  }
+  &__list {
+    margin: 0;
+    min-width: 311px;
+    padding-inline-start: 16px;
+    margin-inline-start: 8px;
+  }
+  &__item {
+    padding-right: 24px;
+    padding-left: 16px;
+    min-width: 271px;
+    color: $neutralColorWengeBrown;
+    &::marker {
+      color: $neutralColorBrandyRed;
+      font-weight: bold;
+    }
+  }
+  &__item--bold {
+    font-weight: bold;
+    padding: 0;
+    padding-right: 5px;
+  }
+}
+@media (min-width: 678px) {
+  .instructions {
+    width: 656px;
+    &__list {
+      height: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-inline-start: 8px;
+    }
+    &__item {
+      width: 616px;
+    }
+  }
+}

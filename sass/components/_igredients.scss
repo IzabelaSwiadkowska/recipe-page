@@ -1,0 +1,38 @@
+.igredients {
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 32px;
+  &__container {
+    min-width: 311px;
+  }
+  &__title {
+    font-family: $secondaryFontFamily;
+    font-weight: 400;
+    color: $neutralColorBrandyRed;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+  &__list {
+    padding-left: 24px;
+    margin: 0;
+  }
+  &__item {
+    color: $neutralColorWengeBrown;
+    padding-left: 16px;
+
+    &::marker {
+      color: $neutralColorBrandyRed;
+    }
+  }
+}
+@media (min-width: 678px) {
+  .igredients {
+    width: 656px;
+    &__list {
+      height: 152px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}
